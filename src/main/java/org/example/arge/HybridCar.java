@@ -23,4 +23,13 @@ public class HybridCar extends CarSkeleton{
     public int getCylinders() {
         return cylinders;
     }
+
+    @Override
+    public String toString() {
+        return  super.toString() + " HybridCar{" +
+                "avgKmPerLitre=" + avgKmPerLitre +
+                ", batterySize=" + batterySize +
+                ", cylinders=" + cylinders +
+                '}';
+    }
 }

@@ -17,4 +17,12 @@ public class GasPoweredCar extends CarSkeleton {
     public int getCylinders() {
         return cylinders;
     }
+
+    @Override
+    public String toString() {
+        return  super.toString()+ " GasPoweredCar{" +
+                "avgKmPerLitre=" + avgKmPerLitre +
+                ", cylinders=" + cylinders +
+                '}';
+    }
 }

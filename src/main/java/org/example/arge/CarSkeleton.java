@@ -12,14 +12,14 @@ public class CarSkeleton {
         this.description = description;
     }
 
-    public void startEngine(){
-
+    public String startEngine(){
+        return (getName() + " has been started.");
     }
-    public void drive(){
-        runEngine();
+    public String drive(){
+        return (runEngine()+ " is being driven.");
     }
-    protected void runEngine(){
-
+    protected String runEngine(){
+        return getClass().getSimpleName();
     }
 
     public String getName(){
@@ -27,5 +27,13 @@ public class CarSkeleton {
     }
     public String getDescription(){
         return description;
+    }
+
+    @Override
+    public String toString() {
+        return "CarSkeleton{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

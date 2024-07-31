@@ -17,4 +17,12 @@ public class ElectricCar extends CarSkeleton{
     public int getBatterySize() {
         return batterySize;
     }
+
+    @Override
+    public String toString() {
+        return  super.toString()+ " ElectricCar{" +
+                "avgKmPerCharge=" + avgKmPerCharge +
+                ", batterySize=" + batterySize +
+                '}';
+    }
 }
